@@ -1,3 +1,5 @@
-export default function (addend, _addend) {
-  return addend + _addend;
+import { x, y } from "./constants";
+
+export default function () {
+  return x + y;
 }
