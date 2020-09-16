@@ -114,65 +114,66 @@
     (__webpack_require__.s = "./src/index.js")
   );
   /******/
-})(
-  /************************************************************************/
-  /******/ {
-    /***/ "./src/add.js":
-      /*!********************!*\
-  !*** ./src/add.js ***!
-  \********************/
-      /*! exports provided: default */
-      /***/ function (module, __webpack_exports__, __webpack_require__) {
-        "use strict";
-        eval(
-          '__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */ "./src/constants.js");\n\r\n\r\n/* harmony default export */ __webpack_exports__["default"] = (function () {\r\n  return _constants__WEBPACK_IMPORTED_MODULE_0__["x"] + _constants__WEBPACK_IMPORTED_MODULE_0__["y"];\r\n});\r\n\n\n//# sourceURL=webpack:///./src/add.js?'
-        );
+})({
+  "./src/add.js": function (module, __webpack_exports__, __webpack_require__) {
+    __webpack_require__.r(__webpack_exports__);
+    var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      "./src/constants.js"
+    );
 
-        /***/
-      },
+    __webpack_exports__["default"] = function () {
+      return (
+        _constants__WEBPACK_IMPORTED_MODULE_0__["x"] +
+        _constants__WEBPACK_IMPORTED_MODULE_0__["y"]
+      );
+    };
+  },
 
-    /***/ "./src/constants.js":
-      /*!**************************!*\
-    !*** ./src/constants.js ***!
-    \**************************/
-      /*! exports provided: x, y */
-      /***/ function (module, __webpack_exports__, __webpack_require__) {
-        "use strict";
-        eval(
-          '__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return x; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return y; });\nconst x = 20;\r\nconst y = 15;\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/constants.js?'
-        );
+  "./src/constants.js": function (
+    module,
+    __webpack_exports__,
+    __webpack_require__
+  ) {
+    __webpack_require__.r(__webpack_exports__);
+    __webpack_require__.d(__webpack_exports__, "x", function () {
+      return x;
+    });
+    __webpack_require__.d(__webpack_exports__, "y", function () {
+      return y;
+    });
+    const x = 20;
+    const y = 15;
+  },
 
-        /***/
-      },
-
-    /***/ "./src/index.js":
-      /*!**********************!*\
-    !*** ./src/index.js ***!
-    \**********************/
-      /*! no exports provided */
-      /***/ function (module, __webpack_exports__, __webpack_require__) {
-        "use strict";
-        eval(
-          '__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _subtract__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./subtract */ "./src/subtract.js");\n/* harmony import */ var _add__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./add */ "./src/add.js");\n/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./constants */ "./src/constants.js");\n\r\n\r\n\r\n\r\nconsole.log(Object(_subtract__WEBPACK_IMPORTED_MODULE_0__["default"])(_constants__WEBPACK_IMPORTED_MODULE_2__["x"], _constants__WEBPACK_IMPORTED_MODULE_2__["y"]));\r\nconsole.log(Object(_add__WEBPACK_IMPORTED_MODULE_1__["default"])());\r\n\n\n//# sourceURL=webpack:///./src/index.js?'
-        );
-
-        /***/
-      },
-
-    /***/ "./src/subtract.js":
-      /*!*************************!*\
-    !*** ./src/subtract.js ***!
-    \*************************/
-      /*! exports provided: default */
-      /***/ function (module, __webpack_exports__, __webpack_require__) {
-        "use strict";
-        eval(
-          '__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__["default"] = (function (minuend, subtrahend) {\r\n  return minuend - subtrahend;\r\n});\r\n\n\n//# sourceURL=webpack:///./src/subtract.js?'
-        );
-
-        /***/
-      },
-
-    /******/
-  }
-);
+  "./src/index.js": function (
+    module,
+    __webpack_exports__,
+    __webpack_require__
+  ) {
+    __webpack_require__.r(__webpack_exports__);
+    var _subtract__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      "./src/subtract.js"
+    );
+    var _add__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./src/add.js");
+    var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      "./src/constants.js"
+    );
+    console.log(
+      Object(_subtract__WEBPACK_IMPORTED_MODULE_0__["default"])(
+        _constants__WEBPACK_IMPORTED_MODULE_2__["x"],
+        _constants__WEBPACK_IMPORTED_MODULE_2__["y"]
+      )
+    );
+    console.log(Object(_add__WEBPACK_IMPORTED_MODULE_1__["default"])());
+  },
+  "./src/subtract.js": function (
+    module,
+    __webpack_exports__,
+    __webpack_require__
+  ) {
+    __webpack_require__.r(__webpack_exports__);
+    __webpack_exports__["default"] = function (minuend, subtrahend) {
+      return minuend - subtrahend;
+    };
+  },
+});
