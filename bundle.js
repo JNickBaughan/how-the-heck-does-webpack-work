@@ -1,3 +1,5 @@
+// https://indepth.dev/under-the-hood-of-web-bundlers-e-g-webpack/
+
 /******/ (function (modules) {
   // webpackBootstrap
   /******/ // The module cache
