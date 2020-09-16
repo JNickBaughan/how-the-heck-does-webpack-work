@@ -44,8 +44,9 @@
   };
 
   // define __esModule on exports
-  __webpack_require__.r = function (exports) {
+  __webpack_require__.defineEsModule = function (exports) {
     if (typeof Symbol !== "undefined" && Symbol.toStringTag) {
+      // Symbol.toStringTag is used internally with toString()
       Object.defineProperty(exports, Symbol.toStringTag, {
         value: "Module",
       });
@@ -61,7 +62,7 @@
     if (mode & 4 && typeof value === "object" && value && value.__esModule)
       return value;
     var ns = Object.create(null);
-    __webpack_require__.r(ns);
+    __webpack_require__.defineEsModule(ns);
     Object.defineProperty(ns, "default", {
       enumerable: true,
       value: value,
@@ -104,13 +105,13 @@
   // Load entry module and return exports
   return __webpack_require__((__webpack_require__.s = "./src/index.js"));
 })({
-  "./src/add.js": function (module, __webpack_exports__, __webpack_require__) {
-    __webpack_require__.r(__webpack_exports__);
+  "./src/add.js": function (module, moduleExports, __webpack_require__) {
+    __webpack_require__.defineEsModule(moduleExports);
     var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       "./src/constants.js"
     );
 
-    __webpack_exports__["default"] = function () {
+    moduleExports["default"] = function () {
       return (
         _constants__WEBPACK_IMPORTED_MODULE_0__["x"] +
         _constants__WEBPACK_IMPORTED_MODULE_0__["y"]
@@ -118,28 +119,20 @@
     };
   },
 
-  "./src/constants.js": function (
-    module,
-    __webpack_exports__,
-    __webpack_require__
-  ) {
-    __webpack_require__.r(__webpack_exports__);
-    __webpack_require__.d(__webpack_exports__, "x", function () {
+  "./src/constants.js": function (module, moduleExports, __webpack_require__) {
+    __webpack_require__.defineEsModule(moduleExports);
+    __webpack_require__.d(moduleExports, "x", function () {
       return x;
     });
-    __webpack_require__.d(__webpack_exports__, "y", function () {
+    __webpack_require__.d(moduleExports, "y", function () {
       return y;
     });
     const x = 20;
     const y = 15;
   },
 
-  "./src/index.js": function (
-    module,
-    __webpack_exports__,
-    __webpack_require__
-  ) {
-    __webpack_require__.r(__webpack_exports__);
+  "./src/index.js": function (module, moduleExports, __webpack_require__) {
+    __webpack_require__.defineEsModule(moduleExports);
     var _subtract__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       "./src/subtract.js"
     );
@@ -155,13 +148,9 @@
     );
     console.log(Object(_add__WEBPACK_IMPORTED_MODULE_1__["default"])());
   },
-  "./src/subtract.js": function (
-    module,
-    __webpack_exports__,
-    __webpack_require__
-  ) {
-    __webpack_require__.r(__webpack_exports__);
-    __webpack_exports__["default"] = function (minuend, subtrahend) {
+  "./src/subtract.js": function (module, moduleExports, __webpack_require__) {
+    __webpack_require__.defineEsModule(moduleExports);
+    moduleExports["default"] = function (minuend, subtrahend) {
       return minuend - subtrahend;
     };
   },
